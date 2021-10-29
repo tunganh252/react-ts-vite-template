@@ -363,10 +363,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@syy11cn/config-router@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@syy11cn/config-router/-/config-router-1.0.4.tgz#da614073cce0837039d00b978389f5baa3eb4765"
-  integrity sha512-5+pSqHZdX3CSfERG7BJ809xYs3mWh8Okt7uF0rqT6ppH1qqYBMhPwih/YyNIoSdbjAo+vhu+QTWwWGpcKS7igg==
+"@syy11cn/config-router@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@syy11cn/config-router/-/config-router-1.0.5.tgz#9b8d4761069bb4051ec1d5973142fdd8783dbf8f"
+  integrity sha512-/wqJhEHArxtaSY24LePVZ3HzlKzYjlywO9I8i8r/AaasgV3C8+0eDsiTCwgdYTE+QkrxhG5UEEMX/XKT5jQ+aQ==
   dependencies:
     react-router-dom "^5.3.0"
 
