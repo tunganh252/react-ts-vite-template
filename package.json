@@ -5,12 +5,23 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "precommit": "lint-staged",
     "lint:less": "stylelint --fix \"src/**/*.less\" --syntax less",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx",
     "lint:prettier": "prettier --check \"src/**/*\" --end-of-line auto",
     "prettier": "prettier -c --write \"src/**/*\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.less": "stylelint --syntax less",
+    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
   },
   "dependencies": {
     "react": "^17.0.0",
@@ -24,6 +35,8 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "esprima": "^4.0.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
     "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
