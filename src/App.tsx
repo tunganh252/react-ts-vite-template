@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>Hello Vite + React + Typescript!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
@@ -36,6 +36,15 @@ const App: React.FC = () => {
             rel="noopener noreferrer"
           >
             Vite Docs
+          </a>
+          {' | '}
+          <a
+            className="App-link"
+            href="https://github.com/syy11cn/config-router"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn Config Router
           </a>
         </p>
       </header>
