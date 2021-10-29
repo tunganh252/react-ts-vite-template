@@ -7,21 +7,21 @@ const App: React.FC = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
         <p>Hello Vite + React + Typescript!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
           </button>
         </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
+        <p className="callout">
+          Edit <code>/src/routes/index.ts</code> for routes configuration.
         </p>
         <p>
           <a
-            className="App-link"
+            className="app-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -30,7 +30,7 @@ const App: React.FC = () => {
           </a>
           {' | '}
           <a
-            className="App-link"
+            className="app-link"
             href="https://vitejs.dev/guide/features.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +39,7 @@ const App: React.FC = () => {
           </a>
           {' | '}
           <a
-            className="App-link"
+            className="app-link"
             href="https://github.com/syy11cn/config-router"
             target="_blank"
             rel="noopener noreferrer"
