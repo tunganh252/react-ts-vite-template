@@ -22,6 +22,72 @@ This is a template repo for projects built with `react` and `typescript` on the 
 
 <div align="center">
 
+## Features
+
+</div>
+
+- Support **`React Hooks`**.
+- Build on **`Vite`**.
+- **`Typescript`** in use.
+- **Code checking and formatting** support.
+- Basic components from **`antd`**
+- **`GraphQL`** support.
+- **`axios`** installed.
+- **Route configuration and guarding** supported by [@syy11cn/config-router](https://github.com/syy11cn/config-router).
+- **Git hooks** support.
+- Use **`yarn`** for package management.
+
+<div align="center">
+
+## Usage
+
+</div>
+
+### Fork
+
+Fork this repo to your account first.
+
+### Rename
+
+Rename the repo using the name of your project.
+
+### Clone
+
+Clone the repo to your local folder.
+
+### Develop
+
+```bash
+cd <path-to-your-cloned-repo>
+yarn
+yarn dev
+```
+
+![image-20211030153313730](https://shaun.oss-cn-beijing.aliyuncs.com/typora/image-20211030153313730.png/watermark)
+
+### More Scripts
+
+For more `yarn` scripts, please refer to `package.json`
+
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "precommit": "lint-staged",
+    "lint:less": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx",
+    "lint:prettier": "prettier --check \"src/**/*\" --end-of-line auto",
+    "prettier": "prettier -c --write \"src/**/*\""
+  }
+}
+```
+
+<div align="center">
+
 ## Packages
 
 </div>
@@ -70,9 +136,63 @@ Here are the packages installed (in `package.json`).
 - `vite` for the base build tool.
 - `eslint`, `stylelint`, `prettier` and `editorconfig` for code checking and formatting.
 - `husky` and `lint-staged` for git hooks configuration.
+- `antd` for basic components.
 
 <div align="center">
 
 ## Folders
 
 </div>
+
+```shell
+src
+│  App.css
+│  App.tsx
+│  favicon.svg
+│  index.css
+│  logo.svg
+│  main.tsx
+│
+├─apis
+├─components
+├─routes
+│      index.ts
+│
+├─typings
+│      images.ts
+│
+├─utils
+└─views
+        ErrorPage.tsx
+```
+
+<div align="center">
+
+## Configuration
+
+</div>
+
+Modify the following config files.
+
+- `.editorconfig`
+- `.eslintrc`
+- `.prettierrc`
+- `.stylelintrc`
+- `tsconfig.json`
+- `vite.config.js`
+
+<div align="center">
+
+## About
+
+</div>
+
+### Chinese Introduction
+
+[CLICK HERE](https://uestc.feishu.cn/docs/doccnFsR35nFeG2DGkG75b77Pld) to check the Chinese introduction doc to this repo on Lark.
+
+### License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2021, Yiyang Sun
